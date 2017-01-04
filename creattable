@@ -1,0 +1,70 @@
+创建数据库
+create database myblog;
+使用数据库
+use myblog;
+显示数据库中的数据表
+show tables；
+
+
+创建数据表
+
+
+创建总文章表
+create table allarticles(  
+id int not null primary key auto_increment,
+b_title varchar(500) not null,  
+b_type varchar(300) not null,
+b_tag varchar(300) not null, 
+b_text varchar(10000) not null,  
+b_date varchar(100) not null
+)ENGINE=InnoDB DEFAULT CHARSET=utf8; 
+
+创建存取文章总数的表
+create table totalnum(
+id int not null primary key auto_increment,
+type varchar(100) not null,
+count int not null
+)ENGINE=InnoDB DEFAULT CHARSET=utf8; 
+
+创建视图
+CREATE VIEW view_a AS
+SELECT id,b_title,b_type,b_tag,b_text,b_date
+FROM allarticles
+WHERE b_type='a';
+
+CREATE VIEW view_b AS
+SELECT id,b_title,b_type,b_tag,b_text,b_date
+FROM allarticles
+WHERE b_type='b';
+
+CREATE VIEW view_c AS
+SELECT id,b_title,b_type,b_tag,b_text,b_date
+FROM allarticles
+WHERE b_type='c';
+
+CREATE VIEW view_d AS
+SELECT id,b_title,b_type,b_tag,b_text,b_date
+FROM allarticles
+WHERE b_type='d';
+
+
+向总数表中插入初始记录
+INSERT INTO totalnum VALUES(1,'all',0);
+INSERT INTO totalnum VALUES(2,'a',0);
+INSERT INTO totalnum VALUES(3,'b',0);
+INSERT INTO totalnum VALUES(4,'c',0);
+INSERT INTO totalnum VALUES(5,'d',0);
+
+查询表
+select * from totalnum;
+
+
+更新表记录
+UPDATE totalnum SET totalNum = 54 WHERE id = 1;
+
+删除表记录
+DELETE FROM article WHERE id = 55;
+
+删除表
+DROP TABLE article;
+

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我的博客</title>
+    <script type="text/javascript" src="jquery-1.10.1.js"></script>
+    <script type="text/javascript" src="marked.min.js"></script>     
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css"/> 
+  </head>
+  <body>
+
+    <header>
+       <div class="header-logo">
+           <img src="images/headlogo.png" alt="">
+       </div>
+       <div class="header-bottom">
+         <img class="headimg left" src="images/headleft.png" alt=""/>
+         <img class="headimg right" src="images/headright.png" alt=""/>
+         <hgroup>
+           <h1 class="header-author">小丸子的博客</h1>
+         </hgroup>
+         <div class="header-social">
+           <a class="github" title="github" href="https://github.com/sienhang" target="_blank"></a>
+           <a class="weibo" title="weibo" href="http://weibo.com/hangsien" target="_blank"></a>
+           <a class="qq" title="QQ"></a> 
+           <a class="mail" title="email"></a>                 
+         </div>         
+       </div>
+       <div class="qq-info">
+          <h2>欢迎QQ交流!</h2>
+          <div class="info">我的QQ号是：735401096</div>
+          <div class="confirm">确认</div>
+       </div>   
+       <div class="email-info">
+          <h2>欢迎Email交流!</h2>
+          <div class="info">我的邮箱是：735401096@qq.com</div>
+          <div class="confirm">确认</div>
+       </div>
+       <div id="screen"></div>            
+    </header>
+
+    <div class="content">
+      <div class="container">
+        <section classify="all">
+
+
+          <div class="section-artical">
+            <article>
+              <div class="article-title">
+                <span sign="0">第一篇博文标题</span>
+              </div>              
+              <div class="article-content">简介一</div>
+              <div class="article-bottom">
+                 <div class="article-route">
+                   <span class="folder">前端技术</span>
+                   <span class="interval">♦</span>
+                   <span class="date">2016/10/20</span>
+                 </div>
+                 <div class="bottom-right">
+                   <span class="readall" sign="0">readall</span>              
+                 </div>
+              </div>
+            </article>
+            <article>
+              <div class="article-title">
+                <span sign="1">第二篇博文标题</span>
+              </div> 
+              <div class="article-content">简介二</div>
+              <div class="article-bottom">
+                 <div class="article-route">
+                   <span class="folder">前端技术</span>
+                   <span class="interval">♦</span>
+                   <span class="date">2016/10/20</span>
+                 </div>
+                 <div class="bottom-right">
+                   <span class="readall" sign="1">readall</span>              
+                 </div>
+              </div>
+            </article>
+            <article>
+              <div class="article-title">
+                <span sign="2">第三篇博文标题</span>
+              </div>  
+              <div class="article-content">简介三</div>
+              <div class="article-bottom">
+                 <div class="article-route">
+                   <span class="folder">前端技术</span>
+                   <span class="interval">♦</span>
+                   <span class="date">2016/10/20</span>
+                 </div>
+                 <div class="bottom-right">
+                   <span class="readall" sign="2">readall</span>               
+                 </div>
+              </div>
+            </article>           
+            <article>
+              <div class="article-title">
+                <span sign="3">第四篇博文标题</span>
+              </div> 
+              <div class="article-content">简介四</div>
+              <div class="article-bottom">
+                 <div class="article-route">
+                   <span class="folder">前端技术</span>
+                   <span class="interval">♦</span>
+                   <span class="date">2016/10/20</span>
+                 </div>
+                 <div class="bottom-right">
+                   <span class="readall" sign="3">readall</span>               
+                 </div>
+              </div>
+            </article>                      
+          </div>
+
+
+          <div class="section-onearticle" presign="">
+            <article>
+              <div class="article-title">
+                <span>第一篇博文标题</span>
+              </div>              
+              <div class="article-content">简介一</div>
+              <div class="article-bottom">
+                 <div class="article-route">
+                   <span class="folder">前端技术</span>
+                   <span class="interval">♦</span>
+                   <span class="date">2016/10/20</span>
+                 </div>
+                 <div class="bottom-right">
+                   <span class="return">back</span>                
+                 </div>
+              </div>
+            </article>
+          </div>
+
+
+          <div class="section-alltitles">
+             <div class="alltitles">
+                <div class="headline">
+                  <span class="tit">第一篇博文标题</span>
+                  <span class="type">--> 前端资源</span>
+                </div>
+                <div class="headline">
+                  <span class="tit">第二篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第三篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第四篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第五篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第六篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第七篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第八篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第九篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第十篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>                                                                                                                                
+                <div class="headline">
+                  <span class="tit">第一篇博文标题</span>
+                  <span class="type">--> 前端资源</span>
+                </div>
+                <div class="headline">
+                  <span class="tit">第二篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第三篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第四篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第五篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第六篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第七篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第八篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第九篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第十篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div> 
+                <div class="headline">
+                  <span class="tit">第一篇博文标题</span>
+                  <span class="type">--> 前端资源</span>
+                </div>
+                <div class="headline">
+                  <span class="tit">第二篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第三篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第四篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第五篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第六篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第七篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第八篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第九篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>
+                <div class="headline">
+                  <span class="tit">第十篇博文标题</span>
+                  <span class="type">--> 前端资源</span>                  
+                </div>                                                               
+             </div>
+          </div>
+
+
+          <div class="section-page" sign="">
+             <ul class="page-list"> 
+                <li class="page arrow prev" title="上一页"><span>&lt;</span>Prev</li> 
+                <li class="page arrow next" title="下一页">Next<span>&gt;</span></li>
+                <div class="pageall"><span>共</span><span class="allpages">1</span><span>页</span></div>
+                <div class="topage"><span>跳转至</span><input class="inputpage" type="text"><span>页</span><div class="skip">确定</div></div>
+            </ul>                                                                                                                 
+          </div>        
+        </section>
+
+        <aside>
+<!--           <div class="aside-search">
+            <input class="search-input" type="text" value="type here..." />
+            <div class="search-button"></div>
+          </div> -->
+          <div class="aside-nav">
+             <div class="nav index">博客首页</div>
+             <div class="nav personal">个人中心</div>
+             <div class="nav allblogs">所有博文</div>
+          </div>
+          <div class="aside-category">
+             <h2 class="category-top">博文分类</h2>
+             <ul class="category-list">
+                <li classify="a">前端技术(<span>0</span>)</li>
+                <li classify="b">资源分享(<span>0</span>)</li>
+                <li classify="c">生活点滴(<span>0</span>)</li>
+                <li classify="d">涂鸦日志(<span>0</span>)</li>                  
+             </ul>             
+          </div>
+          <div class="aside-title">
+             <h2 class="title-top">最新发布</h2>
+             <ul class="title-list">
+                <li>热门博文一</li>
+                <li>热门博文二</li>
+                <li>热门博文三</li>
+                <li>热门博文四</li>
+                <li>热门博文五</li>
+                <li>热门博文六</li>
+                <li>热门博文七</li>
+                <li>热门博文八</li>
+                <li>热门博文九</li>
+                <li>热门博文十</li>    
+                <li>热门博文十一</li>
+                <li>热门博文十二</li>                             
+             </ul>
+          </div>
+          <div class="aside-friends">
+             <h2 class="friends-top">我的好友</h2>
+             <ul class="friends-list">
+                <li>好友一</li>
+                <li>好友二</li>
+                <li>好友三</li>
+                <li>好友四</li>
+                <li>好友五</li>    
+                <li>好友六</li> 
+                <li>好友七</li>
+                <li>好友八</li>                              
+             </ul>             
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <footer>
+       <div class="foot">
+         <div class="foot-content">
+           <span class="top">Top回顶部</span>
+           <span class="copyright">Copyright © 2016.Designed by Hangsien.</span>           
+         </div>
+       </div>
+    </footer>
+
+  </body>
+</html>
+
+

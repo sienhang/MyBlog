@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>博文发表</title>
+    <script type="text/javascript" src="jquery-1.10.1.js"></script>
+    <script type="text/javascript" src="marked.min.js"></script>    
+    <script type="text/javascript" src="admin.js"></script>
+    <link rel="stylesheet" type="text/css" href="admin.css"/> 
+  </head>
+  <body>
+
+    <header>
+       <nav class="header-nav">
+          <div class="nav-left">
+             <div class="nav-logo"><img src="images/nav-logo.png" alt=""></div>
+             <h1 class="nav-title"><a href="http://localhost:3000/index">小丸子的博客</a></h1>             
+          </div>
+          <ul class="nav-right">
+              <li class="nav-exit"><a href="###">退出</a></li>  
+              <li class="nav-home"><a href="http://localhost:3000/index">主页</a></li>                      
+              <li class="nav-draft"><a href="###">草稿</a></li>
+          </ul>
+       </nav>
+    </header>
+
+    <div class="content">
+       <div class="container">
+          <div id="article" method="POST" role="form">
+            <div class="article-title">
+               <input class="form-control mytitle" name="title" placeholder="标题：那是我夕阳下的奔跑" type="text"/>
+            </div>
+            <div class="article-type">
+               <select class="form-control myblogtype" name="blogtype">
+                  <option value="a">前端技术</option>
+                  <option value="b">资源分享</option>  
+                  <option value="c">生活点滴</option>
+                  <option value="d">涂鸦日志</option>                                                    
+               </select>
+            </div>
+            <div class="article-tag">
+               <input class="form-control myblogtag" name="blogtag" placeholder="标签，如：php 可使用逗号,分号;分隔" type="text">
+            </div>
+            <div class="article-text">
+               <div class="editor-toolbar">
+                 <ul class="editor-menu">
+                    <li class="menu-button overstrik" title="加粗"><a style="background-position:0px 0px"></a></li>
+                    <li class="menu-button italic" title="斜体"><a style="background-position:-20px 0px"></a></li>
+                    <li class="menu-button-divider"></li>
+                    <li class="menu-button link" title="链接"><a style="background-position:-40px 0px"></a></li>
+                    <li class="menu-button quote" title="引用"><a style="background-position:-60px 0px"></a></li>
+                    <li class="menu-button code" title="代码"><a style="background-position:-80px 0px"></a></li>
+                    <li class="menu-button image" title="图片"><a style="background-position:-100px 0px"></a></li>    
+                    <li class="menu-button-divider"></li>    
+                    <li class="menu-button figure-list" title="数字列表"><a style="background-position:-120px 0px"></a></li>
+                    <li class="menu-button common-list" title="普通列表"><a style="background-position:-140px 0px"></a></li>
+                    <li class="menu-button title" title="标题"><a style="background-position:-160px 0px"></a></li>
+                    <li class="menu-button parting-line" title="分割线"><a style="background-position:-180px 0px"></a></li>    
+                    <li class="menu-button-divider"></li>
+                    <li class="menu-button repeal" title="撤销"><a style="background-position:-200px -20px"></a></li>
+                    <li class="menu-button reform" title="重做"><a style="background-position:-220px -20px"></a></li>    
+                    <li class="menu-button-divider"></li> 
+                    <li class="menu-button mgrammar" title="Markdown语法"><a style="background-position:-300px 0px"></a></li>                                                                                                                  
+                 </ul>
+                 <ul class="editor-mode">
+                    <li class="mode-button preview" title="预览模式"><a style="background-position:-360px 0px"></a></li>
+                    <li class="mode-button edit-preview" title="实况模式"><a style="background-position:-340px -20px"></a></li>
+                    <li class="mode-button edit" title="编辑模式"><a  style="background-position:-320px 0px"></a></li>
+                    <li class="mode-button-divider"></li> 
+                    <li class="mode-button full-screen" title="全屏"><a style="background-position:-240px 0px"></a></li>                                       
+                 </ul>
+               </div>
+               <div class="editor-area">
+                 <div class="area editor">
+                    <textarea class="editblog"></textarea>
+                 </div>
+                 <div class="area preview">
+                    <div class="previewblog"></div>
+                 </div> 
+               </div>
+            </div>          
+            <a class="editor-resize"></a>
+            <div class="article-publish">
+              <div class="publish-area">
+                <div class="publish-button">发布博文</div>
+              </div> 
+            </div>
+            <div class="confirm-publish">
+                <h2>你确定要发布此篇博文吗?</h2>
+                <div class="choose">
+                    <div class="btn confirm">确认</div>
+                    <div class="btn cancel">取消</div>
+                </div>
+            </div>
+            <div id="screen"></div>
+          </div>
+       </div>
+    </div>
+
+
+
+  </body>
+</html>
+
+
